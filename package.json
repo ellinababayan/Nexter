@@ -1,0 +1,23 @@
+{
+    "name": "nexter",
+    "version": "1.0.0",
+    "description": "Nexter webpage",
+    "main": "index.js",
+    "scripts": {
+      "compile:sass": "node-sass sass/main.scss css/style.css -w",
+      "devserver": "live-server --browser=firefox",
+      "start": "npm-run-all --parallel devserver watch:sass",
+      
+      "createCSS": "sass sass/main.scss css/style.css",
+      "node-sass-version": "node-sass --version",
+      "node-sass": "node-sass --output-style compressed sass/main.scss css/main.min.css",
+      "node-sass-dev": "node-sass --output-style expanded --source-map true -o css/ sass/main.scss"
+    },
+  
+    "author": "Ellina",
+    "license": "ISC",
+    "devDependencies": {
+      "node-sass": "^8.0.0"
+    }
+  }
+  
